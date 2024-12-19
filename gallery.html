@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Haven Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="custom.html">Custom Orders</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="#" onclick="viewCart()">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <h2>Our Books</h2>
+
+        <div class="book-item">
+            <img src="book1.jpg" alt="A Game of Thrones" class="book-image">
+            <p><strong>A Game of Thrones</strong></p>
+            <button class="add-to-cart" onclick="addToCart('A Game of Thrones')">Add to Cart</button>
+        </div>
+
+        <div class="book-item">
+            <img src="book2.jpg" alt="A Clash of Kings" class="book-image">
+            <p><strong>A Clash of Kings</strong></p>
+            <button class="add-to-cart" onclick="addToCart('A Clash of Kings')">Add to Cart</button>
+        </div>
+
+        <div class="book-item">
+            <img src="book3.jpg" alt="A Storm of Swords" class="book-image">
+            <p><strong>A Storm of Swords</strong></p>
+            <button class="add-to-cart" onclick="addToCart('A Storm of Swords')">Add to Cart</button>
+        </div>
+
+        <div class="book-item">
+            <img src="book4.jpg" alt="A Feast for Crows" class="book-image">
+            <p><strong>A Feast for Crows</strong></p>
+            <button class="add-to-cart" onclick="addToCart('A Feast for Crows')">Add to Cart</button>
+        </div>
+
+        <div class="book-item">
+            <img src="book5.jpg" alt="A Dance with Dragons" class="book-image">
+            <p><strong>A Dance with Dragons</strong></p>
+            <button class="add-to-cart" onclick="addToCart('A Dance with Dragons')">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+        <form id="subscribe-form" onsubmit="showConfirmation(event)">
+            <input type="email" id="email" placeholder="Subscribe for updates" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribe-message" style="display: none; color: green;">Thank you for subscribing!</p>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="processOrder()">Process Order</button>
+        <button onclick="viewSessionStorage()">View Session Storage (Before Order)</button>
+        <button onclick="viewSessionStorageAfterOrder()">View Session Storage (After Order)</button>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+

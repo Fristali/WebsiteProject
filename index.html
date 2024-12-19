@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book Haven Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="custom.html">Custom Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home-hero">
+        <h2>Welcome to Book Haven</h2>
+        <p>Your one-stop shop for books of all genres.</p>
+        <button onclick="window.location.href='gallery.html'">Browse Our Gallery</button>
+    </section>
+    
+    <section class="features">
+        <h3>Why Shop with Us?</h3>
+        <div class="feature-item">
+            <img src="books.jpg" alt="Wide Selection">
+            <h4>Wide Selection</h4>
+            <p>From bestsellers to hidden gems, we offer a wide variety of books.</p>
+        </div>
+        <div class="feature-item">
+            <img src="service.jpg" alt="Customer Service">
+            <h4>Exceptional Service</h4>
+            <p>Our team is always ready to help you find the perfect book.</p>
+        </div>
+        <div class="feature-item">
+            <img src="fast.jpg" alt="Fast Shipping">
+            <h4>Fast Shipping</h4>
+            <p>Enjoy quick delivery to your doorstep with every order.</p>
+        </div>
+    </section>
+    
+    <section class="call-to-action">
+        <h3>Ready to find your next read?</h3>
+        <button onclick="window.location.href='gallery.html'">Shop Now</button>
+    </section>
+    
+<footer>
+    <p>&copy; 2024 Book Haven Bookstore. All rights reserved.</p>
+    <form id="subscribe-form" onsubmit="showConfirmation(event)">
+        <input type="email" id="email" placeholder="Subscribe for updates" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <p id="subscribe-message" style="display: none; color: green;">Thank you for subscribing!</p>
+</footer>
+
+</body>
+</html>
